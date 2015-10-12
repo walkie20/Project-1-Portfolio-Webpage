@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@media only screen and (max-width: 975px) {
+    .col-md-2 {display: none;
+	}
+}
+* {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	color: #616161;
+}
+.text-muted {
+	color: #BCBBBB;
+	width: 100%;
+}
+.text-thin {
+	font-weight: 100;
+}
+.title-super {
+	font-size: 400%;
+}
+.title-logo {
+		margin-top: 20px;
+}
+.modal-footer a {
+	float: left;
+	font-size: 130%;
+}
+.modal-caption {
+	font-size: 100%;
+	padding-top: 3%;
+}
+.modal-image-box
+{
+	background-color: #ffffff;
+	border: 1px solid #E5E5E5;
+}
+.col-md-4
+{
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 40.86%,rgba(238,238,238,1.00) 70.38%,rgba(236,233,233,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 40.86%,rgba(238,238,238,1.00) 70.38%,rgba(236,233,233,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 40.86%,rgba(238,238,238,1.00) 70.38%,rgba(236,233,233,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 40.86%,rgba(238,238,238,1.00) 70.38%,rgba(236,233,233,1.00) 100%);
+}
+h3
+{
+	padding-bottom: 3%;
+}
