@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+#navbar {
+	margin: auto;
+	float: left;
+	height: 50px;
+	width: 1024px;
+}
+
+#footer {
+	margin: auto;
+	float: left;
+	height: 68px;
+	width: 1024px;
+}
+#right_column {
+	margin: auto;
+	float: right;
+	height: 500px;
+	width: 324px;
+	background-image: url(images/rightcolumn_bkg_texture.jpg);
+}
+
+#left_column {
+	margin: auto;
+	float: left;
+	height: 500px;
+	width: 700px;
+	background-color: #E1C5AD;
+	overflow-y: scroll;
+}
+#banner {
+	margin: auto;
+	float: left;
+	height: 150px;
+	width: 1024px;
+}
+
+#wrapper {
+	margin: auto;
+	float: none;
+	height: 768px;
+	width: 1024px;
+}
+.headline_homepage {
+	color: #746457;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bolder;
+	font-size: xx-large;
+	text-align: center;
+}
+.paragraph_homepage {
+	color: #746457;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	font-size: small;
+	line-height: 20px;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+a:link {
+	color: #F90B0F;
+	font-weight: bolder;
+	font-size: large;
+}
+a:hover {
+	color: #9006EC;
+}
+
+.new_arrivals_text {
+	color: #037C2F;
+	font-weight: lighter;
+	font-size: xx-large;
+	text-align: center;
+}
+
+.prices_fiction_books {
+	color: #F7070B;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bolder;
+}
+</style>
+<link href="css/bookstore_website.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('images/home_btn_hover.jpg','images/fiction_btn_hover.jpg','images/nonfiction_btn_hover.jpg','images/events_btn_hover.jpg')">
+<div id="wrapper">
+  <div id="banner"><img src="images/banner.jpg" width="1024" height="150" alt="This is the banner to the books and more website"/></div>
+  <div id="navbar"><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('home_button','','images/home_btn_hover.jpg',1)"><img src="images/home_btn.jpg" alt="Click here to access the books and more home page." width="256" height="50" id="home_button"></a><a href="fiction.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','images/fiction_btn_hover.jpg',1)"><img src="images/fiction_btn.jpg" alt="" width="256" height="50" id="Image6"></a><a href="nonfiction.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','images/nonfiction_btn_hover.jpg',1)"><img src="images/nonfiction_btn.jpg" alt="" width="256" height="50" id="Image7"></a><a href="events.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','images/events_btn_hover.jpg',1)"><img src="images/events_btn.jpg" alt="" width="256" height="50" id="Image8"></a></div>
+  <div id="left_column">
+  
+  <table width="700" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr align="center">
+      <td colspan="4" class="headline_homepage">Nonfiction Books</td>
+      </tr>
+    <tr align="center">
+      <td rowspan="2" align="center"><p class="prices_fiction_books"><img src="images/books_nonfiction/nonfiction_book_1.JPG" width="212" height="343" alt=""/></p>
+        <p class="prices_fiction_books">$30</p></td>
+      <td align="center"><img src="images/books_nonfiction/nonfiction_book_2.JPG" width="130" height="196.5" alt=""/>
+        <p class="prices_fiction_books">$20</p></td>
+      <td colspan="2"><img src="images/books_nonfiction/nonfiction_book_3.JPG" width="130" height="202" alt=""/>
+        <p class="prices_fiction_books">$35</p></td>
+      </tr>
+    <tr align="center">
+      <td><p><img src="images/books_nonfiction/nonfiction_book_4.JPG" width="130" height="202" alt=""/></p>
+        <p class="prices_fiction_books">$40</p></td>
+      <td><p><img src="images/books_nonfiction/nonfiction_book_6.JPG" width="130" height="196" alt=""/></p>
+        <p class="prices_fiction_books">$60</p></td>
+      <td><p><span class="new_arrivals_text"><img src="images/books_nonfiction/nonfiction_book_5.JPG" width="130" height="196" alt=""/></span></p>
+        <p class="prices_fiction_books">$25</p></td>
+    </tr>
+  </tbody>
+</table>
+
+  
+  </div>
+  <div id="right_column">
+    <table width="324" height="500" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td align="right" class="new_arrivals_text"><img src="images/books_nonfiction/nonfiction_book_13.JPG" width="260" height="385" alt=""/></td>
+        </tr>
+        <tr>
+          <td align="center"><span class="new_arrivals_text">Nonfiction: Stranger than Fiction!</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+<div id="footer"><img src="images/footer.jpg" width="1024" height="68" alt=""/></div>
+</div>
+</body>
+</html>

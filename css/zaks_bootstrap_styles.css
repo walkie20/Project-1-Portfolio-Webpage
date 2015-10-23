@@ -12,6 +12,11 @@
 	color: #BCBBBB;
 	width: 100%;
 }
+.text-muted2 {
+	color: #BCBBBB;
+	width: 100%;
+	font-size: 137%;
+}
 .text-thin {
 	font-weight: 100;
 }

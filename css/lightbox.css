@@ -162,8 +162,8 @@ body:after {
 }
 
 .lb-data {
-  padding: 0 4px;
-  color: #ccc;
+	padding: 0 4px;
+	color: #FFFFFF;
 }
 
 .lb-data .lb-details {
@@ -174,17 +174,18 @@ body:after {
 }
 
 .lb-data .lb-caption {
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 1em;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 1em;
+	color: #FFFFFF;
 }
 
 .lb-data .lb-number {
-  display: block;
-  clear: left;
-  padding-bottom: 1em;
-  font-size: 12px;
-  color: #999999;
+	display: block;
+	clear: left;
+	padding-bottom: 1em;
+	font-size: 10px;
+	color: #999999;
 }
 
 .lb-data .lb-close {

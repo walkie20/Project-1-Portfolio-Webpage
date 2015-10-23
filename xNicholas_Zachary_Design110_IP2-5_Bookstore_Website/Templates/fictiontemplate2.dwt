@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>My Bookstore Website</title>
+<!-- TemplateEndEditable -->
+<style type="text/css">
+
+#wrapper {
+	margin: auto;
+	float: none;
+	height: 768px;
+	width: 1024px;
+}
+#banner {
+	float: left;
+	height: 150px;
+	width: 1024px;
+	margin: auto;
+}
+#navbar {
+	margin: auto;
+	float: left;
+	height: 50px;
+	width: 1024px;
+}
+#left_column {
+	margin: auto;
+	float: left;
+	height: 500px;
+	width: 700px;
+	overflow-y: scroll;
+	background-image: url(../css/url);
+	background-color: #FFE8C7;
+}
+#right_column {
+	margin: auto;
+	float: right;
+	height: 500px;
+	width: 324px;
+}
+#footer {
+	margin: auto;
+	float: left;
+	height: 68px;
+	width: 1024px;
+}
+
+.headline {
+	color: #736655;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bolder;
+	font-size: x-large;
+	text-align: center;
+	line-height: 10px;
+	letter-spacing: 2px;
+}
+.bodycopy_homepage {
+	color: #746457;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: small;
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 20px;
+	text-shadow: 0px 0px;
+}
+#left_column .bodycopy_homepage img {
+}
+.imageposition {
+	padding-left: 225px;
+	position: relative;
+}
+a:link {
+	color: #03346E;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-variant: small-caps;
+}
+a:hover {
+	color: #F9090D;
+	font-size: x-large;
+}
+</style>
+<link href="../css/bookstore_exported_styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<!-- TemplateParam name="OptionalRegion1" type="boolean" value="true" -->
+</head>
+
+<body onLoad="MM_preloadImages('../images/home_btn_hover.jpg','../images/fiction_btn_hover.jpg','../images/nonfiction_btn_hover.jpg','../images/events_btn_hover.jpg')">
+<div id="wrapper"><!-- TemplateBeginIf cond="OptionalRegion1" -->
+  <div id="banner"><img src="../images/banner.jpg" width="1024" height="150" alt=""/></div>
+<!-- TemplateEndIf -->
+  <div id="navbar"><a href="../index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Home_Button','','../images/home_btn_hover.jpg',1)"><img src="../images/home_btn.jpg" alt="Click here to access the home page." width="256" height="50" id="Home_Button"></a><a href="../fiction.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','../images/fiction_btn_hover.jpg',1)"><img src="../images/fiction_btn.jpg" alt="Click here to go to the fiction page" width="256" height="50" id="Image5"></a><a href="../nonfiction.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','../images/nonfiction_btn_hover.jpg',1)"><img src="../images/nonfiction_btn.jpg" alt="" width="256" height="50" id="Image6"></a><a href="../events.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','../images/events_btn_hover.jpg',1)"><img src="../images/events_btn.jpg" alt="" width="256" height="50" id="Image7"></a></div>
+  <!-- TemplateBeginEditable name="EditRegion3" -->
+  <div id="left_column"></div>
+  <!-- TemplateEndEditable --><!-- TemplateBeginEditable name="EditRegion4" -->
+  <div id="right_column"></div>
+  <!-- TemplateEndEditable -->
+  <div id="footer"><img src="../images/footer.jpg" width="1024" height="68" alt="This is the footer image"/></div>
+</div>
+</body>
+</html>
