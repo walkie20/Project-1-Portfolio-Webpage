@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Gaston Gazette Online</title>
+<style type="text/css">
+
+#wrapper {
+	height: 1000px;
+	width: 1366px;
+	margin: auto;
+	float: none;
+	background-color: #8C8C8C;
+}
+#banner {
+	float: left;
+	height: 200px;
+	width: 1366px;
+}
+#top_left_story {
+	float: left;
+	height: 370px;
+	width: 608px;
+	overflow-y: hidden;
+}
+#top_right_story {
+	float: right;
+	height: 370px;
+	width: 608px;
+	background-color: #E1DEE4;
+	overflow-y: hidden;
+}
+#ad_home {
+	float: left;
+	height: 370px;
+	width: 150px;
+	background-color: #C2E8A3;
+}
+#bottom_left_story {
+	background-color: #E1DEE4;
+	float: left;
+	height: 370px;
+	width: 608px;
+	overflow-y: hidden;
+}
+#right_bottom_story {
+	background-color: #FFFFFF;
+	float: right;
+	height: 370px;
+	width: 608px;
+	overflow-y: hidden;
+}
+#sectionpage_leftcolumn {
+	background-color: #C2E8A3;
+	float: right;
+	height: 800px; 
+	width: 1200px;
+}
+.headline_home {
+	color: #A60002;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-weight: bolder;
+	font-size: 335%;
+	line-height: 82%;
+	margin-top: 2%;
+	margin-bottom: 0%;
+	padding-right: 0px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.storytext_home {
+	color: #4D0001;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	font-size: large;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 0px;
+}
+.byline_home {
+	color: #110467;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-weight: lighter;
+	font-style: italic;
+	padding-left: 5%;
+	text-align: right;
+	padding-right: 9%;
+}
+.imageposition1_home {
+	margin-left: 323px;
+	margin-top: -42%;
+	margin-bottom: 157px;
+}
+.storytext_home_withimage {
+	color: #4D0001;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	font-size: large;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 0px;
+	margin-right: 244px;
+}
+#navbar {
+	float: left;
+	height: 66px;
+	width: 1366px;
+	background-color: #676767;
+}
+#navbar a {
+	/* [disabled]background-color: #F30A0E; */
+	display: inline-block;
+	width: 191px;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 227%;
+	text-decoration: none;
+	line-height: 182%;
+	border-radius: 20px;
+}
+#navbar a:hover {
+	background-color: #7B0305;
+	color: #FCE861;
+}
+#section_buttons {
+	float: left;
+	height: 370px;
+	width: 150px;
+}
+#section_buttons ul {
+	margin-left: -40px;
+	margin-top: 0px;
+}
+#section_buttons li {
+	display: block;
+}
+#section_buttons li a {
+	width: 150px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-weight: normal;
+	text-align: left;
+	font-size: 94%;
+	line-height: 37px;
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+	text-indent: 21px;
+	background-color: #000000;
+}
+#section_buttons li a:hover {
+	background-color: #7C0002;
+	color: #FFFFFF;
+	font-weight: bolder;
+}
+
+#section_title {
+	background-color: #870002;
+	float: right;
+	height: 100px;
+	width: 1216px;
+	border-radius: 124px;
+}
+
+.section_title_textformatting {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	text-align: center;
+	font-size: 385%;
+	line-height: 164%;
+	background-color: #A8A8A8;
+	font-style: italic;
+}
+
+#sectionpage_left_col {
+	float: right;
+	height: 634px;
+	width: 304px;
+	background-color: #000000;
+	overflow-y: hidden;
+}
+#sectionpage_leftmiddle_col {
+	float: right;
+	height: 634px;
+	width: 304px;
+	background-color: #E4E4E4;
+	overflow-y: hidden;
+}
+#sectionpage_rightmiddle_col {
+	float: right;
+	height: 634px;
+	width: 304px;
+	background-color: #030303;
+	overflow-y: hidden;
+}
+#sectionpage_right_col {
+	float: right;
+	height: 634px;
+	width: 304px;
+	background-color: #E8E8EB;
+	overflow-y: hidden;
+}
+.sectionpage_headline2 {
+	color: #000000;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 243%;
+	font-weight: bolder;
+	line-height: 98%;
+	margin-top: 18px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.sectionpage_headline {
+	color: #000000;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 243%;
+	font-weight: bolder;
+	line-height: 98%;
+	margin-top: 18px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.storytext_sectionpage {
+	color: #450001;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.storytext_sectionpage_reverse {
+	color: #FFFFFF;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.sectionpage_headline2 a {
+	color: #020B6A;
+	text-decoration: none;
+}
+.sectionpage_headline a {
+	color: #E8E8E8;
+	text-decoration: none;
+}
+
+#sectionpage_imagecontainer {
+	float: left;
+	height: 260px;
+	width: 304px;
+	position: relative;
+	left: 0px;
+}
+.sectionpage_headline a:hover {
+	color: #F41216;
+	text-decoration: underline;
+}
+.sectionpage_headline2 a:hover {
+	color: #F76F07;
+	text-decoration: underline;
+}
+.storytext_storypage {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: x-large;
+	line-height: 142%;
+	color: #022B63;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+#story_div {
+	background-color: #E4E4E4;
+	float: right;
+	height: 640px;
+	width: 1216px;
+	overflow-y: scroll;
+}
+
+#section_title a {
+	color: #FFCE00;
+}
+.headline_home a  {
+	color: #A60002;
+	text-decoration: none;
+}
+
+.headline_home a:visited {
+	color: #000000;
+}
+.headline_home a:focus {
+	color: #F80000;
+}
+
+
+.headline_home a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+	text-shadow: 0px 0px 36px #8A8A8A;
+}
+.storypage_image_center {
+	position: relative;
+	margin-top: 0px;
+	margin-left: 278px;
+
+}
+</style>
+<link href="css/newspaper_styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="banner"><img src="images/banner_img.jpg" width="1366" height="200" alt=""/></div>
+  <div id="navbar"><a href="index.html">Home</a> <a href="#">Contact</a> <a href="#">Locations</a> <a href="#">About Us</a> <a href="#">Links</a> <a href="#">Contact</a> <a href="#">Careers</a></div>
+  <div id="section_buttons">
+    <ul>
+      <li><a href="breakingnews.html">Breaking News</a></li>
+      <li><a href="#">Weather</a></li>
+      <li><a href="#">Classifieds</a></li>
+      <li><a href="#">World News</a></li>
+      <li><a href="#">National News</a></li>
+      <li><a href="#">Local News</a></li>
+      <li><a href="#">Lifestyle</a></li>
+      <li><a href="#">Arts &amp; Crafts</a></li>
+      <li><a href="#">Comics</a></li>
+      <li><a href="#">Politics</a></li>
+    </ul>
+  </div>
+  <div class="section_title_textformatting" id="section_title">Breaking News!</div>
+  
+  <div id="sectionpage_right_col">
+  
+  
+    <p class="sectionpage_headline2"><a href="story4.html">Google Maps adds spoken traffic alerts on iOS</a></p>
+    <p class="storytext_sectionpage">
+Google Maps has been updated on iOS to send spoken traffic alerts to drivers. It is a significant update that should let drivers know well in advance what is happening on the road, letting them choose an alternate route before entering into what could be large congestion or a traffic accident.
+
+Users will receive a spoken summary of the upcoming traffic, which could be a minor crash or major congestion, along with a delay estimate. Google will be able to provide detailed reports of the entire route, which means you can change the route before you even step into the car.
+
+Related: Google engineer goes on a crusade against faulty USB Type-C cables on Amazon.com
+
+Traffic alerts have played a big part in Waze’s success — the mapping app that Google acquired for $1.1 billion in 2013 — and Google Maps is finally receiving the feature. Though, instead of user generated traffic alerts, Google will use data from other Google Maps users and traffic services to make sure information is accurate.
+
+“While you’re on the road, Google Maps will give you a heads up if congestion lies ahead, and how long you’ll be stuck in a jam,” said Google. “You’ll also get the option to take alternate routes, including explanations for why one is recommended — whether it’s the fastest or avoids an incident.”
+
+Google Maps added spoken traffic alerts earlier in the year on Android, and it has finally arrived on iOS. Apple Maps currently doesn’t offer traffic alerts, neither does Nokia Maps, which was recently sold to a consortium of German car manufacturers.
+
+The Google Maps update comes a few weeks after a major overhaul to Waze, adding a ton of new features to Israeli-based mapping service. Both mapping services continue to receive regular updates, which is odd considering they compete for users.
+</p>
+  </div>
+  
+  
+  <div id="sectionpage_rightmiddle_col">   
+  <p class="sectionpage_headline"><a href="story3.html">Why Google Glass Failed Why Apple Watch Could Too</a></p>
+    <p class="storytext_sectionpage_reverse"> Frustrated business owners frequently contact me because their potential customers are not embracing their super-cool, latest offering. In most cases, the owner of the latest, best mousetrap, brags about all of its innovative features and benefits. They often explode with a monologue of excitement about how much money their offering can save customers, how much faster customers will be able to complete a given task, or how it can provide a capability the rest of the market can’t deliver. </p>
+    <p class="storytext_sectionpage_reverse">Unfortunately, these are not the questions they need to answer for their customer, especially for business-minded customers. Companies often forgot (or don’t know) what questions customers really ask during the decision making process. Google Glass Failed, Apple Watch Might Fail Too Our house is an equal opportunity household when it comes to Google and Apple. I carry an Android phone (though my teenage children are Apple-fanatics). </p>
+    <p class="storytext_sectionpage_reverse">By all accounts, Google Glass failed to gain commercial success. Just to be clear, Google Glass didn’t fail because of the technology, rather because it wasn’t clear to the customer what problem it solved or why they needed it. If Apple doesn’t create a clear use case for the Apple Watch and demonstrate why people need to care about it, then Apple Watch could see the same fate as Google Glass. </p>
+    <p class="storytext_sectionpage_reverse">Regardless of the outcome, rest assured that Google and Apple will not be defined by their first wearable products. Sure, Google Glass is cool. Apple Watch is slick. Back in the late 1990s or early 2000s, you could get away with cool or slick without a defined purpose.      </p>
+    <p class="storytext_sectionpage_reverse">The early adopters bought into Google Glass. Diehard Apple fans can’t wait to show-off their Apple Watch. But, for most buyers, they need to see more to make a rational purchase decision. Why They Failed I’ve asked more than 3,000 CEOs and executives to identify the top questions they need to answer in order to approve or deny a request to spend money on something. I universally get the same answer at the top of the list: “What problem does it solve or why would I need it?” Google Glass failed to help consumers understand why they needed such a device. </p>
+    <p class="storytext_sectionpage_reverse">With a recent move to larger and larger screens for users, it might be a risky move for Apple to shift its focus to a user interface the size of a watch face. But, diehard Apple fans will cite Steve Jobs’ quote, “People don’t know what they want until you show it to them.” Remember that the Apple Watch is an accessory for your phone, not a replacement. </p>
+    <p class="storytext_sectionpage_reverse">If you are used to wearing a watch, getting notifications without taking your phone from your purse or pocket might seem appealing. Certainly, Apple proved its point with the iPod in 2001. However, the iPod solved an important challenge. Consumers could not easily carry their entire music library with them, dynamically switching between thousands of songs (I remember my travel case for carrying cassette tapes with me). </p>
+    <p class="storytext_sectionpage_reverse">Though consumers didn’t know they wanted an iPod, it was clear to the customer the problem Apple was solving for them. Today, we take MP3 music for granted. What They Ask Next http://www.forbes.com/sites/ianaltman/2015/04/28/why-google-glass-failed-and-why-apple-watch-could-too/ </p>
+    
+   
+  </div>
+  
+  <div id="sectionpage_leftmiddle_col">
+  
+  <p class="sectionpage_headline2"><a href="story2.html">Ukrane Denies Claim</a></p>
+    <p class="storytext_sectionpage"> In Mariupol, Ukraine and Gregory L. White in Moscow connect Updated Aug. 28, 2014 5:52 p.m. ET Ukrainian President Petro Poroshenko said Russian forces had entered Ukraine and seized the coastal town of Novoazovsk, putting a diplomatic response to the crisis in doubt. Photo: Agence France-Presse/Getty Images Ukraine on Thursday accused Russia of having invaded the country, dashing hopes of progress toward a diplomatic resolution and challenging the West to respond.</p>
+    <div id="sectionpage_imagecontainer"> 
+    <img src="images/story1_photo_img.jpg" width="303" height="226" alt=""/> </div>
+  </div>
+  
+  
+  <div id="sectionpage_left_col">
+    <div id="sectionpage_imagecontainer"><img src="file:///C|/Users/Z/Desktop/Nicholas_Zachary_Design110_Website_Design/images/image.jpg" width="304" height="250" alt=""/></div>
+ 
+  <p class="sectionpage_headline"><a href="story1.html">Feral hog attacks car, charges people</a></p>
+    <p class="storytext_sectionpage_reverse"> Police put down wild animal raising a ruckus in neighborhood outside Dallas
+      Frank Burnett and friend Tony Wyatt pose with the wild hog shot in Burnett's neighborhood outside Dallas shortly after 10 a.m. Sunday.   Photo submittedFrank Burnett and friend Tony Wyatt pose with the wild hog shot in Burnett's neighborhood outside Dallas shortly after 10 a.m. Sunday. The wild hog raising a stink in a neighborhood outside Dallas took several shots from a .40-caliber handgun, says Frank Burnett, “and all that did was make it dizzy.” A county police officer eventually used a rifle to kill the feral animal Sunday morning after the hog charged at people on the 400 block of Wimbledon Drive near Miles Road, said Capt. S.V. Jentsch of the Gaston County Police Department.  The officer, assigned to Gaston County Animal Care and Enforcement, formerly Animal Control, had responded to a call about a vicious hog. The animal was at least 200 pounds, according to estimates from people who saw it damage a car before the animal was shot by a nearby homeowner.    His neighbor, alerted to the hog’s presence by a car alarm, shot the animal, which then charged the shooter, said Burnett. He thinks the wild hog was looking through the neighborhood for something to eat when it saw its own reflection in the car and attacked. Bears have recently been spotted in the neighborhood, too, said Burnett, a hunter who figures the dry season caused animals to leave nearby woods in search of sustenance. The neighborhood is in a densely populated area, according to Burnett. He hopes people will take Sunday’s events as a warning and call the authorities when wild animals show up in residential areas.“This thing can kill you as quick as a bear can,” Burnett said. “It took two or three shots from a high-powered rifle to make it go down.” Jentsch said a feral hog is not a common sight in Gaston County, and the aggressive animal killed Sunday is being tested for rabies.  The good news, he said, is that it did not hurt anyone or come into contact with any person.  The sergeant who shot the animal did so because the hog was a threat to residents’ safety and because it was already suffering from gunshot wounds, said Jentsch. </p>
+  </div>
+  
+
+
+
+
+
+
+
+  <div id="ad_home"><img src="images/ad1_img.jpg" width="150" height="364" alt=""/></div>
+  
+  
+
+</div>
+</body>
+</html>
